@@ -140,7 +140,8 @@ Google Таблица: https://drive.google.com/drive/folders/1Xq6kLhBRWxGmrmw-w
 - 🔴 BUG-004 — Enter при выборе региона сбрасывает форму (Major)
 - 🟠 BUG-005 — SSL-ошибки в консоли ChromeDriver (Minor)
 
-Подробнее в листе «Баг-репорты»
+Подробнее в листе «Баг-репорты»:
+https://docs.google.com/spreadsheets/d/1ROjeWERqeawPYUDuy3fVSEL7wZCRR_erwMCL9ucUFro/edit?gid=169156214#gid=169156214
 
 ---
 
