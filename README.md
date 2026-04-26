@@ -45,15 +45,18 @@
 
 ## 📁 Структура проекта
 
-- `rostel_sso_tests/`
-  - `config/settings.py` — URL, таймауты
-  - `pages/base_page.py` — Базовые методы
-  - `pages/auth_page.py` — Страница авторизации
-  - `pages/recovery_page.py` — Восстановление пароля
-  - `tests/conftest.py` — Фикстура Chrome (антибот)
-  - `tests/test_auth.py` — 25 автотестов
-  - `requirements.txt` — Зависимости
-  - `README.md` — Документация
+- `rostel_sso_tests/` — корень проекта
+  - `config/` — настройки
+    - `settings.py` — URL, таймауты
+  - `pages/` — Page Object Model
+    - `base_page.py` — базовые методы (wait, click, input)
+    - `auth_page.py` — локаторы и методы авторизации
+    - `recovery_page.py` — восстановление пароля
+  - `tests/` — автоматизированные тесты
+    - `conftest.py` — фикстура Chrome (антибот)
+    - `test_auth.py` — 25 автотестов
+  - `requirements.txt` — зависимости проекта
+  - `README.md` — документация проекта
 
 ---
 
