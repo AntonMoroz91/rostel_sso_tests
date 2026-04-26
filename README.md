@@ -62,29 +62,26 @@
 
 ## 🚀 Установка и запуск
 
-1. Клонирование репозитория
+**1. Клонирование репозитория**
 git clone https://github.com/AntonMoroz91/rostel_sso_tests.git
 cd rostel_sso_tests
 
-2. Виртуальное окружение и зависимости
+**2. Виртуальное окружение и зависимости**
 python -m venv .venv
-source .venv/bin/activate      (Linux / Mac)
-.venv\Scripts\activate         (Windows)
+source .venv/bin/activate (Linux/Mac)
+.venv\Scripts\activate (Windows)
 pip install -r requirements.txt
 
-3. Запуск тестов
-Все тесты разом:
-pytest -v
+**3. Запуск тестов**
+pytest -v (все 25 тестов)
+pytest -k "register" -v (только регистрация)
+pytest -k "auth" -v (только авторизация)
+pytest tests/test_auth.py::TestAuth::test_auth_page_loaded -v -s (один тест)
 
-Один тест (например, ТК-001):
-pytest tests/test_auth.py::TestAuth::test_auth_page_loaded -v -s
-
-Группа тестов по ключевому слову:
-pytest -k "register" -v
-
-⚠️ Требуется Chrome 147+
-⚠️ VPN с российским IP (если за рубежом)
-⚠️ SSL-ошибки обходятся автоматически (антибот TSPD)
+**⚠️ Требования**
+Chrome 147+
+VPN с российским IP (если за рубежом)
+SSL-ошибки обходятся автоматически (антибот TSPD)
 
 ---
 
