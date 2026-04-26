@@ -147,8 +147,8 @@ https://drive.google.com/drive/folders/1Xq6kLhBRWxGmrmw-wnbaXpKrwTRYb8L2
 
 ## 👤 Контакты
 
-- Автор: Антон Морозов
-- Курс: SkillFactory QAP-3.0
-- Дата сдачи: апрель 2026
-- GitHub: https://github.com/AntonMoroz91/rostel_sso_tests
-- Документация: https://drive.google.com/drive/folders/1Xq6kLhBRWxGmrmw-wnbaXpKrwTRYb8L2
+- ⬩ Автор: Антон Мороз
+- ⬩ Курс: SkillFactory QAP
+- ⬩ Дата сдачи: апрель 2026
+- ⬩ GitHub: https://github.com/AntonMoroz91/rostel_sso_tests
+- ⬩ Документация: https://drive.google.com/drive/folders/1Xq6kLhBRWxGmrmw-wnbaXpKrwTRYb8L2
