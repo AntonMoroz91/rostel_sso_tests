@@ -92,7 +92,7 @@
 - `pytest -k "auth" -v` — только авторизация
 - `pytest tests/test_auth.py::TestAuth::test_auth_page_loaded -v -s` — один тест
 
-> ⚠️ **Требования:** Chrome 147+, VPN с российским IP (если за рубежом)  
+> ⚠️ **Требования:** Chrome 147+
 > ⚠️ SSL-ошибки обходятся автоматически (антибот TSPD)
 
 ---
