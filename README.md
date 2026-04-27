@@ -157,5 +157,5 @@ https://drive.google.com/drive/folders/1Xq6kLhBRWxGmrmw-wnbaXpKrwTRYb8L2
 | 🎓 **Курс** | Тестировщик-автоматизатор на Python (QAP) |
 | 🏢 **Кейс** | Ростелеком Информационные Технологии |
 | 📅 **Дата** | апрель 2026 |
-| 🔗 **GitHub** | github.com/AntonMoroz91/rostel_sso_tests |
-| 📊 **Документация** | Google Таблица |
+| 🔗 **GitHub** | [github.com/AntonMoroz91/rostel_sso_tests](https://github.com/AntonMoroz91/rostel_sso_tests) |
+| 📊 **Документация** | [Google Таблица](https://drive.google.com/drive/folders/1Xq6kLhBRWxGmrmw-wnbaXpKrwTRYb8L2) |
