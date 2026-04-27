@@ -7,15 +7,15 @@
 ---
 
 ## 📋 Содержание
-- Цели и задачи
-- Стек технологий
-- Структура проекта
-- Установка и запуск
-- Техники тест-дизайна
-- Обоснование автоматизации
-- Тест-кейсы и баг-репорты
-- Обнаруженные дефекты
-- Контакты
+- [Цели и задачи](#-цели-и-задачи)
+- [Стек технологий](#-стек-технологий)
+- [Структура проекта](#-структура-проекта)
+- [Установка и запуск](#-установка-и-запуск)
+- [Техники тест-дизайна](#-техники-тест-дизайна)
+- [Обоснование автоматизации](#-обоснование-автоматизации)
+- [Тест-кейсы и баг-репорты](#-тест-кейсы-и-баг-репорты)
+- [Обнаруженные дефекты](#-обнаруженные-дефекты)
+- [О проекте](#-о-проекте)
 
 ---
 
@@ -33,6 +33,7 @@
 ---
 
 ## 🛠 Стек технологий
+
 | Инструмент         | Версия | Назначение                        |
 |--------------------|--------|-----------------------------------|
 | Python             | 3.11   | Язык программирования             |
@@ -63,25 +64,23 @@
 ## 🚀 Установка и запуск
 
 **1. Клонирование репозитория**
-- git clone https://github.com/AntonMoroz91/rostel_sso_tests.git
-- cd rostel_sso_tests
+- `git clone https://github.com/AntonMoroz91/rostel_sso_tests.git`
+- `cd rostel_sso_tests`
 
 **2. Виртуальное окружение и зависимости**
-- python -m venv .venv
-- source .venv/bin/activate (Linux/Mac)
-- .venv\Scripts\activate (Windows)
-- pip install -r requirements.txt
+- `python -m venv .venv`
+- `source .venv/bin/activate` (Linux/Mac)
+- `.venv\Scripts\activate` (Windows)
+- `pip install -r requirements.txt`
 
 **3. Запуск тестов**
-- pytest -v (все 25 тестов)
-- pytest -k "register" -v (только регистрация)
-- pytest -k "auth" -v (только авторизация)
-- pytest tests/test_auth.py::TestAuth::test_auth_page_loaded -v -s (один тест)
+- `pytest -v` — все 25 тестов
+- `pytest -k "register" -v` — только регистрация
+- `pytest -k "auth" -v` — только авторизация
+- `pytest tests/test_auth.py::TestAuth::test_auth_page_loaded -v -s` — один тест
 
-**⚠️ Требования**
-- Chrome 147+
-- VPN с российским IP (если за рубежом)
-- SSL-ошибки обходятся автоматически (антибот TSPD)
+> ⚠️ **Требования:** Chrome 147+, VPN с российским IP (если за рубежом)  
+> ⚠️ SSL-ошибки обходятся автоматически (антибот TSPD)
 
 ---
 
@@ -128,12 +127,12 @@
 
 ## 📊 Тест-кейсы и баг-репорты
 
-Google Таблица:
-https://drive.google.com/drive/folders/1Xq6kLhBRWxGmrmw-wnbaXpKrwTRYb8L2
+📎 **Google Таблица:**  
+[drive.google.com/.../1Xq6kLhBRWxGmrmw-wnbaXpKrwTRYb8L2](https://drive.google.com/drive/folders/1Xq6kLhBRWxGmrmw-wnbaXpKrwTRYb8L2)
 
-- Лист 1: 🤖 Автотесты (25) — описание всех автоматизированных тестов
-- Лист 2: 👤 Ручные тесты (5) — сценарии с SMS и Email
-- Лист 3: 🐞 Баг-репорты (5) — дефекты (шаги, ОР, ФР)
+- Лист 1: 🤖 **Автотесты (25)** — описание всех автоматизированных тестов
+- Лист 2: 👤 **Ручные тесты (5)** — сценарии с SMS и Email
+- Лист 3: 🐞 **Баг-репорты (5)** — дефекты (шаги, ОР, ФР)
 
 ---
 
@@ -145,7 +144,7 @@ https://drive.google.com/drive/folders/1Xq6kLhBRWxGmrmw-wnbaXpKrwTRYb8L2
 - BUG-004 — Enter при выборе региона сбрасывает форму 🔴 Major
 - BUG-005 — SSL-ошибки в консоли ChromeDriver 🟠 Minor
 
-Подробнее в листе «Баг-репорты»
+> 📎 Подробнее в [листе «Баг-репорты»](https://docs.google.com/spreadsheets/d/1ROjeWERqeawPYUDuy3fVSEL7wZCRR_erwMCL9ucUFro/edit?gid=169156214#gid=169156214)
 
 ---
 
