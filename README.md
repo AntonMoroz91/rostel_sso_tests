@@ -149,7 +149,7 @@ https://drive.google.com/drive/folders/1Xq6kLhBRWxGmrmw-wnbaXpKrwTRYb8L2
 
 ---
 
-## 👤 Контакты
+## 📋 О проекте
 
 | | |
 |---|---|
