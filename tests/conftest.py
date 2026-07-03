@@ -3,11 +3,12 @@ import sys
 import os
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from config.settings import BASE_URL, IMPLICIT_WAIT
 import allure
 
-# ---- КРИТИЧНО: добавляем корневую папку в пути поиска модулей ----
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# ---- НАСТРОЙКИ (были в config/settings.py) ----
+BASE_URL = "https://b2c.passport.rt.ru/"
+IMPLICIT_WAIT = 10
+EXPLICIT_WAIT = 15
 
 
 def pytest_addoption(parser):
@@ -71,7 +72,7 @@ def driver(request):
     driver.quit()
 
 
-# ---- НОВОЕ: Allure-отчёт со скриншотами при падении ----
+# ---- Allure-отчёт со скриншотами при падении ----
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item, call):
     outcome = yield
