@@ -1,5 +1,6 @@
 # 🔐 Ростелеком ID — Автотесты SSO
 [![Run tests](https://github.com/AntonMoroz91/rostel_sso_tests/actions/workflows/ci.yml/badge.svg)](https://github.com/AntonMoroz91/rostel_sso_tests/actions/workflows/ci.yml)
+📊 **Allure-отчёт:** [antonmoroz91.github.io/rostel_sso_tests/](https://antonmoroz91.github.io/rostel_sso_tests/)
 
 🎓 **Дипломный проект** | **SkillFactory QAP**  
 🌐 **Сервис:** b2c.passport.rt.ru  
