@@ -98,6 +98,23 @@
 > ⚠️ Chrome 147+
 > ⚠️ SSL-ошибки обходятся автоматически (антибот TSPD)
 
+## 🐳 Запуск через Docker (изолированное окружение)
+
+> Docker позволяет запускать тесты в контейнере — без установки Python, Chrome и драйверов на твой компьютер.
+
+**1. Установи Docker Desktop:**  
+[Скачать Docker](https://www.docker.com/products/docker-desktop/)
+
+**2. Собери образ (один раз):**
+docker build -t rostel-tests .
+
+**3. Запусти тесты (подставь свои логин и пароль):**
+docker run --rm -e LOGIN="мой_логин" -e PASSWORD="мой_пароль" rostel-tests
+
+**4. Запуск конкретного теста:**
+docker run --rm -e LOGIN="мой_логин" -e PASSWORD="мой_пароль" rostel-tests pytest -k "register" -v
+
+> 💡 Тесты запустятся внутри контейнера, даже если у тебя нет Python или Chrome на компьютере.
 ---
 
 ## 🧪 Техники тест-дизайна
