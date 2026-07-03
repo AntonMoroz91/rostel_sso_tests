@@ -3,9 +3,6 @@ import sys
 import os
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.core.os_manager import ChromeType
 import allure
 
 # ---- НАСТРОЙКИ ----
@@ -15,12 +12,15 @@ EXPLICIT_WAIT = 15
 
 
 def pytest_addoption(parser):
+    """Добавляем возможность запускать тесты в headless-режиме"""
     parser.addoption("--headless", action="store_true", default=False,
                      help="Run Chrome in headless mode")
 
 
 @pytest.fixture(scope="function")
 def driver(request):
+    """Фикстура для Chrome с обходом защиты + поддержка headless"""
+
     chrome_options = Options()
 
     # ---- Указываем путь к Chrome ----
@@ -54,10 +54,8 @@ def driver(request):
         chrome_options.add_argument("--disable-extensions")
         chrome_options.add_argument("--disable-setuid-sandbox")
 
-    # ---- ИСПОЛЬЗУЕМ webdriver-manager С ЯВНЫМ УКАЗАНИЕМ ВЕРСИИ ----
-    # Пробуем установить драйвер для версии Chrome, которая у нас есть
-    service = Service(ChromeDriverManager(driver_version="149.0.7827.200").install())
-    driver = webdriver.Chrome(service=service, options=chrome_options)
+    # ---- СОЗДАЁМ ДРАЙВЕР (без webdriver_manager) ----
+    driver = webdriver.Chrome(options=chrome_options)
 
     # Скрываем navigator.webdriver через CDP
     driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
@@ -82,6 +80,7 @@ def driver(request):
     driver.quit()
 
 
+# ---- Allure-отчёт со скриншотами при падении ----
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item, call):
     outcome = yield
