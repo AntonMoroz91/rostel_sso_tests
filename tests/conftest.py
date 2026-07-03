@@ -3,6 +3,8 @@ import sys
 import os
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 import allure
 
 # ---- НАСТРОЙКИ (были в config/settings.py) ----
@@ -51,8 +53,9 @@ def driver(request):
         chrome_options.add_argument("--disable-extensions")
         chrome_options.add_argument("--disable-setuid-sandbox")
 
-    # Создаём драйвер
-    driver = webdriver.Chrome(options=chrome_options)
+    # ---- Создаём драйвер через webdriver-manager ----
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=chrome_options)
 
     # Скрываем navigator.webdriver через CDP (твоя защита)
     driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
