@@ -23,6 +23,9 @@ def driver(request):
 
     chrome_options = Options()
 
+    # ---- Указываем путь к Chrome ----
+    chrome_options.binary_location = "/usr/bin/google-chrome"
+
     # ---- ТВОИ СТАРЫЕ НАСТРОЙКИ (всё сохранено) ----
     chrome_options.add_argument("--start-maximized")
     chrome_options.add_argument("--incognito")
