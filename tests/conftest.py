@@ -1,8 +1,13 @@
 import pytest
+import sys
+import os
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from config.settings import BASE_URL, IMPLICIT_WAIT
 import allure
+
+# ---- КРИТИЧНО: добавляем корневую папку в пути поиска модулей ----
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 def pytest_addoption(parser):
