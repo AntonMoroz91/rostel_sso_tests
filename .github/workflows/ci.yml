@@ -18,27 +18,16 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Install Chrome
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y wget unzip
-        wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-        sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-        sudo apt-get update
-        sudo apt-get install -y google-chrome-stable
-        google-chrome --version
-
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
-        pip install allure-pytest
 
-    - name: Run tests with Allure
+    - name: Run tests with Allure and Coverage
       env:
         LOGIN: ${{ secrets.LOGIN }}
         PASSWORD: ${{ secrets.PASSWORD }}
       run: |
-        pytest --headless --alluredir=allure-results
+        pytest --headless --alluredir=allure-results --cov=pages --cov=config --cov-report=html --cov-report=term
 
     - name: Upload Allure results
       uses: actions/upload-artifact@v4
@@ -60,3 +49,10 @@ jobs:
         publish_dir: ./allure-report
         destination_dir: .
         keep_files: false
+
+    - name: Upload Coverage Report
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: coverage-report
+        path: htmlcov

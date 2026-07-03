@@ -1,0 +1,12 @@
+.idea/
+.pytest_cache/
+__pycache__/
+allure-results/
+allure-report/
+htmlcov/
+.git/
+.gitignore
+README.md
+screenshot.png
+*.pyc
+*.log
