@@ -5,6 +5,7 @@
 ![Pytest](https://img.shields.io/badge/Pytest-7.4-orange?logo=pytest)
 ![Allure](https://img.shields.io/badge/Allure-Report-purple)
 ![Docker](https://img.shields.io/badge/Docker-Enabled-blue?logo=docker)
+![Author](https://img.shields.io/badge/Author-AntonMoroz91-blue)
 
 [![Run tests](https://github.com/AntonMoroz91/rostel_sso_tests/actions/workflows/ci.yml/badge.svg)](https://github.com/AntonMoroz91/rostel_sso_tests/actions/workflows/ci.yml)
 
