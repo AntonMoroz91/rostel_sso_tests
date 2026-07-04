@@ -1,0 +1,2 @@
+
+✅ ТК-009: Переход на страницу регистрации выполнен, URL: https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/registration?client_id=account_b2c&tab_id=ux8UetN4k3I
