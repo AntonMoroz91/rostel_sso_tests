@@ -1,2 +1,0 @@
-
-✅ ТК-008: Кнопка 'Вернуться' работает, URL: https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/authenticate?execution=fc343b3b-9ff7-4786-bb30-e60caa7821cd&client_id=account_b2c&tab_id=JHtOYcKcJOs
