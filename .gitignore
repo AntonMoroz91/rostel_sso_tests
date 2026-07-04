@@ -6,3 +6,4 @@ pyvenv.cfg
 *.jpg
 __pycache__/
 .pytest_cache/
+.idea/
