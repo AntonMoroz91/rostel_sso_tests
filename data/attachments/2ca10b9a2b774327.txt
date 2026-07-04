@@ -1,6 +1,0 @@
-✅ Форма авторизации загружена
-
-Текущий URL: https://b2c.passport.rt.ru/auth/realms/b2c/protocol/openid-connect/auth?client_id=account_b2c&redirect_uri=https://b2c.passport.rt.ru/account_b2c/login&response_type=code&scope=openid&state=568d382f-cc32-4531-97f5-49f9ce4b53f4
-Title страницы: 'Ростелеком ID'
-Скриншот сохранён: screenshot.png
-✅ Страница успешно загружена!

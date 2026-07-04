@@ -1,86 +1,86 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
 "
-        ТК-002: Проверка валидации пустых полей.
-        Ожидается: кнопка ""Войти"" не отправляет форму, пользователь остаётся на странице авторизации.
-        ","4857","test_empty_fields_validation","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
-"
-        ТК-014: Валидация пароля (менее 8 символов).
-        ","11207","test_register_password_validation_short","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
-"
-        ТК-024: Проверка автоопределения типа логина (телефон)
-        ","5290","test_tab_switch_on_phone_input","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
-"
-        ТК-009: Проверка перехода на страницу регистрации.
-        Ожидается: после клика на ""Зарегистрироваться"" открывается форма регистрации.
-        ","8399","test_register_page_redirect","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
-"
-        ТК-016: Валидация пароля (кириллица вместо латиницы).
-        ","11095","test_register_password_validation_cyrillic","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+        ТК-022: Проверка, что пароль скрыт при вводе
+        ","5378","test_password_field_is_masked","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
 "
         ТК-013: Валидация email (некорректный формат).
-        ","10068","test_register_email_validation_invalid","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+        ","11228","test_register_email_validation_invalid","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+"
+        ТК-023: Проверка, что пустые поля не проходят валидацию
+        ","6486","test_login_button_validation_empty_fields","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
 "
         ТК-021: Проверка выбора региона (Алтайский край)
-        ","13416","test_register_region_select","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
-"
-        ТК-005: Проверка перехода на форму восстановления пароля.
-        Ожидается: после клика на ""Забыл пароль"" открывается страница восстановления.
-        ","9003","test_recovery_password_form","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+        ","13903","test_register_region_select","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
 "
         ТК-020: Проверка кликабельности таба ""Лицевой счет"".
-        ","5748","test_ls_tab_clickable","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
-"
-        ТК-006: Проверка наличия элементов на странице восстановления пароля.
-        Ожидается: поле ввода, капча, кнопка ""Далее"", кнопка ""Вернуться"".
-        ","7933","test_recovery_page_elements","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
-"
-        ТК-003: Проверка авторизации с неверными данными.
-        Ожидается: сообщение об ошибке ""Неверный логин или пароль"".
-        ","7481","test_invalid_credentials","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
-"
-        ТК-001: Проверка загрузки страницы авторизации.
-        Ожидается: отображаются поля ввода логина, пароля и кнопка ""Войти"".
-        ","4999","test_auth_page_loaded","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+        ","6334","test_ls_tab_clickable","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
 "
         ТК-007: Проверка валидации капчи (пустое поле).
         Ожидается: ошибка о необходимости ввода капчи.
-        ","9647","test_recovery_captcha_validation","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
-"
-        ТК-023: Проверка, что пустые поля не проходят валидацию
-        ","6716","test_login_button_validation_empty_fields","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
-"
-        ТК-019: Проверка наличия таба ""Лицевой счет"".
-        ","4707","test_ls_tab_exists","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+        ","10244","test_recovery_captcha_validation","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
 "
         ТК-010: Проверка наличия элементов на странице регистрации.
-        ","8236","test_register_page_elements","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+        ","8216","test_register_page_elements","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
 "
-        ТК-015: Валидация пароля (без заглавной буквы).
-        ","10111","test_register_password_validation_no_uppercase","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
-"Проверка открытия страницы авторизации","6106","test_open_auth_page","tests","2026-07-04","passed","2026-07-04","","test_smoke","",""
+        ТК-014: Валидация пароля (менее 8 символов).
+        ","9750","test_register_password_validation_short","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
 "
-        ТК-012: Валидация фамилии (менее 2 символов).
-        ","10735","test_register_surname_validation_short","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
-"
-        ТК-017: Валидация подтверждения пароля (пароли не совпадают).
-        ","10564","test_register_password_validation_mismatch","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
-"
-        ТК-018: Проверка перехода на форму авторизации по коду.
-        ","14292","test_code_auth_form_redirect","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+        ТК-002: Проверка валидации пустых полей.
+        Ожидается: кнопка ""Войти"" не отправляет форму, пользователь остаётся на странице авторизации.
+        ","5335","test_empty_fields_validation","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
 "
         ТК-011: Валидация имени (менее 2 символов).
-        ","11128","test_register_name_validation_short","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+        ","11149","test_register_name_validation_short","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
 "
-        ТК-025: Проверка ссылки на политику обработки персональных данных
-        ","9308","test_privacy_policy_link","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+        ТК-003: Проверка авторизации с неверными данными.
+        Ожидается: сообщение об ошибке ""Неверный логин или пароль"".
+        ","7814","test_invalid_credentials","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
 "
-        ТК-004: Проверка переключения табов аутентификации.
-        Ожидается: при клике на таб меняется плейсхолдер поля ввода.
-        ","67797","test_tabs_switching","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+        ТК-015: Валидация пароля (без заглавной буквы).
+        ","10384","test_register_password_validation_no_uppercase","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
 "
-        ТК-022: Проверка, что пароль скрыт при вводе
-        ","4566","test_password_field_is_masked","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+        ТК-006: Проверка наличия элементов на странице восстановления пароля.
+        Ожидается: поле ввода, капча, кнопка ""Далее"", кнопка ""Вернуться"".
+        ","8947","test_recovery_page_elements","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+"
+        ТК-009: Проверка перехода на страницу регистрации.
+        Ожидается: после клика на ""Зарегистрироваться"" открывается форма регистрации.
+        ","8488","test_register_page_redirect","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+"Проверка открытия страницы авторизации","6379","test_open_auth_page","tests","2026-07-04","passed","2026-07-04","","test_smoke","",""
+"
+        ТК-024: Проверка автоопределения типа логина (телефон)
+        ","5437","test_tab_switch_on_phone_input","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+"
+        ТК-012: Валидация фамилии (менее 2 символов).
+        ","10756","test_register_surname_validation_short","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
 "
         ТК-008: Проверка кнопки ""Вернуться"" на странице восстановления.
         Ожидается: возврат на страницу авторизации.
-        ","10717","test_recovery_back_button","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+        ","10807","test_recovery_back_button","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+"
+        ТК-017: Валидация подтверждения пароля (пароли не совпадают).
+        ","11358","test_register_password_validation_mismatch","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+"
+        ТК-019: Проверка наличия таба ""Лицевой счет"".
+        ","5370","test_ls_tab_exists","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+"
+        ТК-005: Проверка перехода на форму восстановления пароля.
+        Ожидается: после клика на ""Забыл пароль"" открывается страница восстановления.
+        ","9025","test_recovery_password_form","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+"
+        ТК-018: Проверка перехода на форму авторизации по коду.
+        ","14235","test_code_auth_form_redirect","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+"
+        ТК-004: Проверка переключения табов аутентификации.
+        Ожидается: при клике на таб меняется плейсхолдер поля ввода.
+        ","68167","test_tabs_switching","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+"
+        ТК-001: Проверка загрузки страницы авторизации.
+        Ожидается: отображаются поля ввода логина, пароля и кнопка ""Войти"".
+        ","5402","test_auth_page_loaded","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+"
+        ТК-016: Валидация пароля (кириллица вместо латиницы).
+        ","11550","test_register_password_validation_cyrillic","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
+"
+        ТК-025: Проверка ссылки на политику обработки персональных данных
+        ","10691","test_privacy_policy_link","tests","2026-07-04","passed","2026-07-04","TestAuth","test_auth","",""
