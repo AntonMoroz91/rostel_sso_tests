@@ -1,4 +1,11 @@
 # 🔐 Ростелеком ID — Автотесты SSO
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Selenium](https://img.shields.io/badge/Selenium-4.15-brightgreen?logo=selenium)
+![Pytest](https://img.shields.io/badge/Pytest-7.4-orange?logo=pytest)
+![Allure](https://img.shields.io/badge/Allure-Report-purple)
+![Docker](https://img.shields.io/badge/Docker-Enabled-blue?logo=docker)
+
 [![Run tests](https://github.com/AntonMoroz91/rostel_sso_tests/actions/workflows/ci.yml/badge.svg)](https://github.com/AntonMoroz91/rostel_sso_tests/actions/workflows/ci.yml)
 
 📊 **Allure-отчёт:** [antonmoroz91.github.io/rostel_sso_tests/](https://antonmoroz91.github.io/rostel_sso_tests/)
